@@ -11,13 +11,13 @@
           <!--          用户名-->
           <el-form-item prop="username" label="">
             <el-input v-model="loginForm.username" placeholder="用户名"
-                      prefix-icon="iconfont icon-bussiness-man"></el-input>
+                      prefix-icon="iconfont icon-user-circle"></el-input>
           </el-form-item>
           <!--          密码-->
           <el-form-item prop="password" label="">
             <el-input v-model="loginForm.password"
                       placeholder="密码"
-                      prefix-icon="iconfont icon-password"
+                      prefix-icon="iconfont icon-lock"
                       type="password"
             ></el-input>
           </el-form-item>

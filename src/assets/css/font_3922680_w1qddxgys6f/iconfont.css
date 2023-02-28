@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3922680 */
+  src: url('iconfont.woff2?t=1677585243833') format('woff2'),
+       url('iconfont.woff?t=1677585243833') format('woff'),
+       url('iconfont.ttf?t=1677585243833') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-layergroup-fill:before {
+  content: "\e7b5";
+}
+
+.icon-user-group-fill:before {
+  content: "\e7d3";
+}
+
+.icon-user-circle:before {
+  content: "\e860";
+}
+
+.icon-collection:before {
+  content: "\e6ea";
+}
+
+.icon-editor:before {
+  content: "\e6f5";
+}
+
+.icon-eit:before {
+  content: "\e6f6";
+}
+
+.icon-homepage_fill:before {
+  content: "\e702";
+}
+
+.icon-like_fill:before {
+  content: "\e707";
+}
+
+.icon-like:before {
+  content: "\e708";
+}
+
+.icon-lock:before {
+  content: "\e709";
+}
+
+.icon-manage_fill:before {
+  content: "\e70b";
+}
+
+.icon-manage:before {
+  content: "\e70c";
+}
+
+.icon-more:before {
+  content: "\e710";
+}
+
+.icon-narrow:before {
+  content: "\e711";
+}
+
+.icon-offline_fill:before {
+  content: "\e712";
+}
+
+.icon-people_fill:before {
+  content: "\e715";
+}
+
+.icon-people:before {
+  content: "\e716";
+}
+
+.icon-qrcode:before {
+  content: "\e71c";
+}
+
+.icon-remind:before {
+  content: "\e71f";
+}
+
+.icon-scan:before {
+  content: "\e722";
+}
+
+.icon-service_fill:before {
+  content: "\e727";
+}
+
+.icon-translation:before {
+  content: "\e737";
+}
+
+.icon-workbench_fill:before {
+  content: "\e73e";
+}
+
+.icon-qianniu:before {
+  content: "\e745";
+}
+
+.icon-publishgoods_fill:before {
+  content: "\e746";
+}
+
+.icon-transaction_fill:before {
+  content: "\e748";
+}
+
+.icon-financial_fill:before {
+  content: "\e74b";
+}
+
+.icon-marketing_fill:before {
+  content: "\e74c";
+}
+
+.icon-decoration_fill:before {
+  content: "\e74f";
+}
+
+.icon-tools:before {
+  content: "\e762";
+}
+
+.icon-commodity:before {
+  content: "\e764";
+}
+

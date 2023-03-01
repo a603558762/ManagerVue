@@ -18,9 +18,12 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 
 router.beforeEach((to,from,next)=>{
+    const token = window.sessionStorage.getItem("token")
       // console.log("to:",to.path)
-      if(to.path==="/login") return next()
-     const token = window.sessionStorage.getItem("token")
+      if(to.path==="/login") {
+          return next()
+      }
+
         console.log("token:",token)
       if(!token) return next("/login")
         return next()

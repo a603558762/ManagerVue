@@ -22,6 +22,7 @@
             :collapse="collapse"
             :collapse-transition='false'
             router
+            :default-active="currentActive"
             active-text-color="#343434">
           <el-submenu :index="item.path" v-for="item in menuList" :key="item.name">
             <template slot="title" v-if="item.name" >
@@ -29,7 +30,9 @@
               <span>{{ item.name }}</span>
             </template>
             <el-menu-item-group v-if="item.routes">
-              <el-menu-item :index="item.path" v-for="r in item.routes" :key="r.name">
+              <el-menu-item :index="r.path"
+                            @click="setCurrentActive(r.path)"
+                            v-for="r in item.routes" :key="r.name">
 
                 <i class="el-icon-menu"></i>
                 <span>{{ r.name }}</span>
@@ -41,7 +44,14 @@
       </el-aside>
 
       <el-main>
+
         <router-view></router-view>
+
+
+  <el-backtop class="goTop" >
+    upsfsdfsd
+  </el-backtop>
+
       </el-main>
     </el-container>
   </el-container>
@@ -56,6 +66,7 @@ export default {
   data() {
     return {
       menuList: [],
+      currentActive:"",
       collapse:false,
       IconObj : {
         "Home":"iconfont icon-homepage_fill",
@@ -70,8 +81,13 @@ export default {
   },
   created() {
     this.initData()
+    this.currentActive=window.sessionStorage.getItem("currentactive")
   },
   methods: {
+    setCurrentActive(path){
+      console.log("path:",path)
+      window.sessionStorage.setItem("currentactive",path)
+    },
     logout() {
       window.sessionStorage.clear()
       this.$router.push("/login")
@@ -96,7 +112,10 @@ export default {
 </script>
 
 <style scoped>
-
+/*.goTop{*/
+/*    height: 100vh;*/
+/*    overflow-x: hidden;*/
+/*  }*/
 .iconfont{
   padding: 10px;
 }

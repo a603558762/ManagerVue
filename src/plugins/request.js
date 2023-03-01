@@ -16,13 +16,16 @@ export function request(config) {
         if (token) config.headers.Authorization = "jwt " +token
         return config    //必须返回回去 否则调用处取不到
     },err=>{
-        //console.log(err)
+        // console.log(err)
+        return Promise.reject(err.request);
     })
     //2.2响应拦截
     instance.interceptors.response.use(res=>{
         //拦截操作
+        // console.log("res:",res)
         return res //必须返回回去 否则调用处取不到
     },err=>{
+         return Promise.reject(err.response);
         //console.log(err)
     })
 

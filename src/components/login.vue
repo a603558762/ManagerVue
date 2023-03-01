@@ -100,6 +100,10 @@ export default {
       })
 
     }
+  },
+  created(){
+    let token = window.sessionStorage.getItem("token")
+    if (token) this.$router.push("/home")
   }
 }
 </script>

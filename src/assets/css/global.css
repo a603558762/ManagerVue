@@ -5,3 +5,10 @@ html,body,#app {
   margin: 0;
 
 }
+.el-breadcrumb {
+    margin-bottom: 20px;
+
+}
+.el-pagination{
+    margin-top: 20px;
+}

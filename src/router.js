@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Login from './components/login'
 import Home from './components/Home'
 import Wellcome from './components/Wellcome'
+import Users from "./components/users/Users"
 
 Vue.use(Router)
 
@@ -23,6 +24,10 @@ export default new Router({
                 {
                     path: "/wellcome",
                     component: Wellcome
+                },
+                {
+                    path:"/xadmin/users/user_profile",
+                    component:Users
                 }
             ]
         }

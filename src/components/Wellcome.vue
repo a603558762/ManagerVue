@@ -1,5 +1,6 @@
 <template>
-<h1>wellcome</h1>
+<h1>Wellcome</h1>
+
 </template>
 
 <script>
